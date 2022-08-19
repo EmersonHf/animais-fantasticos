@@ -4,7 +4,7 @@ Tópicos Abordados :
 Regexp - Regular Expressions 
 Fetch - api requisitions 
 Async & Await
-Class - POO
+Class 
 Rest & Spread 
 Javascript Assynchronous
 DOM - modules, manipulações, setTimeout , dataset

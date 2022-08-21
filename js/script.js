@@ -1,5 +1,5 @@
 import ScrollSuave from './modules/scroll-suave.js';
-import ScrollAnima from './modules/scroll-animacao.js';
+import ScrollAnima from './modules/scroll-anima.js';
 import Accordion from './modules/accordion.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';

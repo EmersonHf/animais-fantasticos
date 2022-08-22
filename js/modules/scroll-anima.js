@@ -5,7 +5,7 @@ export default class ScrollAnima{
   constructor(sections){
     this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
-    this.checkDistance = debounce(this.checkDistance.bind(this), 5);
+    this.checkDistance = debounce(this.checkDistance.bind(this), 200);
     
   }
   //pega a distancia de cada item em relação
@@ -22,17 +22,17 @@ export default class ScrollAnima{
   //verifica a distancia em cada objeto
   //em relaçao ao scroll do site
   checkDistance(){
-    if(this.animaScroll === false){
-      this.element.hidden = true;
+      
           this.distance.forEach((item)=>{
         if (window.scrollY > item.offset) {
           item.element.classList.add("ativo");
         } else if (item.element.classList.contains("ativo")) {
           item.element.classList.remove("ativo");
-        }
+        }  do {
+          item.element.classList.add('ativo');
+        } while (window.scrollY == 0);
       })
-    }
-    console.log(window.scrollY)
+    
    
   }
 
